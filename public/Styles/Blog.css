@@ -1,0 +1,14 @@
+#Blog ul li {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#Blog h2 {
+    margin-bottom: 10px;
+}
+
+#Blog {
+    float: left;
+    width: 300px;
+}

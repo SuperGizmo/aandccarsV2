@@ -1,0 +1,14 @@
+#Twitter ul li {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#Twitter h2 {
+    margin-bottom: 10px;
+}
+
+#Twitter {
+    float: left;
+    width: 300px;
+}
