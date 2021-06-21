@@ -8,12 +8,15 @@ body {
     background-repeat:repeat-x;
     font-size: 0.8em;
 }
+
 #topright{
     float: right;
 }
+
 #topleft{
     padding-top: 10px;
     font-size: 1.3em;
+    color: #FFF;
 }
 
 #main_container {
