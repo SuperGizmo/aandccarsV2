@@ -8,7 +8,6 @@
 @section('content')
         <div id="left_content" style="width: 774px;">
             <h1>Welcome to A &amp; C Cars</h1>
-            <img src=http://www.worldpay.com/images/cardlogos/VISA.gif border=0 alt="Visa Credit and Debit payments" align="right">
             <ul>
                 <li>Fully licensed operator with Runnymede Borough Council.</li>
                 <li>Experienced and courteous drivers, all vehicles registered and metered.</li>
