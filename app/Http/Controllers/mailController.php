@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use App\Notifications\BookingReceived;
+use Illuminate\Support\Facades\Notification;
 
 class mailController extends Controller
 {
@@ -21,7 +22,7 @@ class mailController extends Controller
         ]);
 
         //If everything is correct than run passes.
-        Mail::to('bookings@aandccars.co.uk')->bcc('daniel@rawrsome.co.uk')->send(new BookingReceived($data));
+        Notification::send(['bookings@aandccars.co.uk','daniel@rawrsome.co.uk'], new BookingReceived($data));
 
         // Redirect to page
         return redirect('thankyou.html');
