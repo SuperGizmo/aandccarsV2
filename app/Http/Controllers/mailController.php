@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Mail;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
+use App\Notifications\BookingReceived;
 
 class mailController extends Controller
 {
@@ -20,11 +21,7 @@ class mailController extends Controller
         ]);
 
         //If everything is correct than run passes.
-        Mail::send('emails.booking', $data, function($message) use ($data) {
-            $message->from('bookings@aandccars.co.uk' , 'Web Bookings');
-            $message->to(env('MAIL_TO_ADDRESS'), env('MAIL_TO_NAME'))->subject('New Booking');
-            $message->bcc('daniel@rawrsome.co.uk', env('MAIL_TO_NAME'))->subject('New Booking');
-        });
+        Mail::to('bookings@aandccars.co.uk')->bcc('daniel@rawrsome.co.uk')->send(new BookingReceived($data));
 
         // Redirect to page
         return redirect('thankyou.html');
