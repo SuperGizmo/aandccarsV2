@@ -1,0 +1,311 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #CCC;
+    background-image:url(/images/bg.jpg);
+    background-repeat:repeat-x;
+    font-size: 0.8em;
+}
+#topright{
+    float: right;
+}
+#topleft{
+    padding-top: 10px;
+    font-size: 1.3em;
+}
+
+#main_container {
+    width: 984px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px auto;
+}
+
+#logo
+{
+    padding-bottom: 4px;
+}
+
+#bottom_content_container
+{
+    margin-top: 10px;
+    padding: 10px;
+    color: #000;
+    list-style-type: none;
+    background-color: #f1eded;
+}
+
+tr {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+table{
+    width: 100%;
+}
+
+td:nth-child(1){
+    font-weight: bold;
+}
+#Blog ul li {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#Blog h2 {
+    margin-bottom: 10px;
+}
+
+#Blog {
+    float: left;
+    width: 300px;
+}
+#Contact-2 ul {
+    list-style: none;
+    padding: 0px;
+}
+#Contact-2
+{
+    padding: 0px;
+    color: #000;
+}
+#Contact-2 input{
+    width: 165px;
+    background-color: #274c5f;
+    border: 1px solid #000;
+    color: #fff;
+}
+#Contact-2 textarea{
+    width: 163px;
+    height: 64px;
+    background-color: #274c5f;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+
+.ContactUsError
+{
+    color: #F00;
+    font-weight: bold;
+}
+.ContactUsSucess
+{
+    color: #0F0;
+}
+#content_area
+{
+    padding-top: 10px;
+}
+
+#left_content
+{
+    float: left;
+    width: 774px;
+    background-color: #f1eded;
+    color: #000;
+    min-height: 376px;
+    padding: 10px;
+}
+
+#right_content
+{
+    float: left;
+    width: 170px;
+    background-color: #d5d4d4;
+    padding: 10px;
+}
+
+.clear{
+    clear: both;
+}
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 1px solid #000;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 10px 0px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h5 {
+    line-break: normal;
+    display: inline;
+}
+#Google_Map
+{
+    width: 300px;
+    height: 120px;
+    float: left;
+}
+#legal{
+    color: #000;
+    padding: 5px;
+    float: left;
+}
+/*
+    Document   : Products
+    Created on : 15-Dec-2012, 22:11:08
+    Author     : Daniel
+    Description:
+        Purpose of the stylesheet follows.
+        This is for the control of the products page for CSS
+*/
+
+
+
+#latest_products li{
+    width: 228px;
+    background-color: #2581ab;
+    float: left;
+    padding: 5px;
+    color: #000;
+    margin-left: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+
+#latest_products ul li:first-child {
+    margin-left: 0px;
+}
+
+.LatestProductViewMoreImage
+{
+    width: 230px;
+}
+
+
+
+
+
+.LatestProductViewMoreImage_crop
+{
+    padding-top: 5px;
+    margin-bottom: 5px;
+    height: 75px;
+    width: 230px;
+    overflow: hidden;
+}
+
+a.LatestProductViewMore:link{
+    width: 230px;
+    color: #fff;
+    display: block;
+    padding: 5px 0px 5px 0px;
+    text-decoration: none;
+    background-color: #000;
+}
+
+a.LatestProductViewMore:active{
+    width: 230px;
+    color: #fff;
+    display: block;
+    padding: 5px 0px 5px 0px;
+    text-decoration: none;
+    background-color: #000;
+}
+
+a.LatestProductViewMore:visited{
+    width: 230px;
+    color: #fff;
+    display: block;
+    padding: 5px 0px 5px 0px;
+    text-decoration: none;
+    background-color: #000;
+}
+
+a.LatestProductViewMore:hover{
+    width: 230px;
+    color: #fff;
+    display: block;
+    padding: 5px 0px 5px 0px;
+    text-decoration: none;
+    background-color: #484748;
+}
+/*
+    Document   : Navigation
+    Created on : 15-Dec-2012, 13:00:46
+    Author     : Daniel
+    Description:
+        Purpose of the stylesheet follows.
+        This is just the navigation area of the site
+*/
+
+#nav_container
+{
+    height: 14px;
+}
+
+#Navigationa ul {
+    padding: 0px;
+}
+
+#Navigation li {
+    list-style: none;
+    float: left;
+    color: #000;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+#Navigation li:hover {
+    list-style: none;
+    float: left;
+    color: #AAA;
+    font-weight: strong;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+#websiteby{
+    float: right;
+    padding: 5px;
+    text-align: right;
+}
+/*
+    Document   : rotating_image
+    Created on : 15-Dec-2012, 13:32:33
+    Author     : Daniel
+    Description:
+        Purpose of the stylesheet follows.
+        To hold the rotating image files in place
+*/
+
+#rotating_image_container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+    width: 182px;
+}
+
+li.rotating_image {
+    border: 1px;
+    border-color: #22a0da;
+    border-style: solid;
+    list-style-type: none;
+    height: 150px;
+    width: 982px;
+}
+#Twitter ul li {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#Twitter h2 {
+    margin-bottom: 10px;
+}
+
+#Twitter {
+    float: left;
+    width: 300px;
+}

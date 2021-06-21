@@ -10,20 +10,7 @@
     <meta name="ROBOTS" content="ALL,NOODP" />
     <meta name="AUTHOR" content="Rawrsome Designs Ltd" />
     <meta name="COPYRIGHT" content="Rawrsome Designs Ltd" />
-    <link rel="stylesheet" type="text/css" href="Styles/aandccars.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/Navigation.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/rotating_image.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/content_area.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/font.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/Products.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/Twitter.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/Blog.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/googlemap.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/legal.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/Rawrsome.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/ContactUs.css"/>
-
-
+    <link href="/css/app.css" rel="stylesheet">
     <script src="js/js.js"></script>
 
     <script type="text/javascript">
