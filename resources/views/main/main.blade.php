@@ -10,8 +10,14 @@
     <meta name="ROBOTS" content="ALL,NOODP" />
     <meta name="AUTHOR" content="Rawrsome Designs Ltd" />
     <meta name="COPYRIGHT" content="Rawrsome Designs Ltd" />
-    <link href="/css/app.css" rel="stylesheet">
-    <script src="js/js.js"></script>
+
+    @if (app()->environment('local'))
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+        <script src="{{ mix('js/app.js') }}"></script>
+    @else
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <script src="{{ asset('js/app.js') }}" defer></script>
+    @endif
 
     <script type="text/javascript">
 
