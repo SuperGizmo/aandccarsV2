@@ -43,6 +43,7 @@ class BookingReceived extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
+            ->from('Website Booking <bookings@aandccars.co.uk>')
             ->subject('New Booking Enquiry')
             ->greeting('New Booking Enquiry')
             ->line('Here are your booking details:')
