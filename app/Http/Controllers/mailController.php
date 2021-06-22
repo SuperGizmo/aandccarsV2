@@ -22,7 +22,7 @@ class mailController extends Controller
         ]);
 
         //If everything is correct than run passes.
-        Notification::send(['bookings@aandccars.co.uk','daniel@rawrsome.co.uk'], new BookingReceived($data));
+        Notification::route('mail', 'bookings@aandccars.co.uk')->notify(new BookingReceived($data));
 
         // Redirect to page
         return redirect('thankyou.html');

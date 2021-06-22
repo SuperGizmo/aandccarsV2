@@ -78,12 +78,21 @@ td:nth-child(1){
     padding: 0px;
     color: #000;
 }
+
 #Contact-2 input{
     width: 165px;
     background-color: #274c5f;
     border: 1px solid #000;
     color: #fff;
 }
+
+#Contact-2 button{
+    width: 165px;
+    background-color: #274c5f;
+    border: 1px solid #000;
+    color: #fff;
+}
+
 #Contact-2 textarea{
     width: 163px;
     height: 64px;

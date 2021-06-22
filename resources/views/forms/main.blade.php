@@ -20,10 +20,11 @@
             <li>Time: &#42;<br /><input type="text" Name="Time" value="" /></li>
             <li>Flight Number: &#42;<br /><input type="text" Name="flightNumber" value="" /></li>
             <li>Do you require meet and greet?: <br />
-            <select name="meetAndGreet">
-                <option value="Yes">Yes</option>
-                <option value="No" selected>No</option>
-            </select></li>
+                <select name="meetAndGreet">
+                    <option value="Yes">Yes</option>
+                    <option value="No" selected>No</option>
+                </select>
+            </li>
             <li>Do you require airport Car Park?: <br />
                 <select name="airportCarpark">
                     <option value="Yes">Yes</option>
@@ -31,11 +32,7 @@
                 </select>
             </li>
             {!! csrf_field() !!}
-{{--            <li><input type="submit" value="Book" Name="Submit"  /></li>--}}
-            <li><button class="g-recaptcha"
-                        data-sitekey="{{ env('recaptcha_public_key') }}"
-                        data-callback='onSubmit'
-                        data-action='submit'>Book</button></li>
+            <li><button class="g-recaptcha" data-sitekey="{{ env('recaptcha_public_key') }}" data-callback='onSubmit' data-action='submit'>Book</button></li>
         </ul>
     </div>
 </form>

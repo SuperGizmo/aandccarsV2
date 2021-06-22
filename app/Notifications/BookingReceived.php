@@ -43,20 +43,20 @@ class BookingReceived extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->subject('New Booking Enquiry')
-                    ->greeting('New Booking Enquiry')
-                    ->line('Here are your booking details:')
-                    ->line('Name: ' . $this->data['name '])
-                    ->line('Contact Number: ' . $this->data['phone'])
-                    ->line('Email: ' . $this->data['email'])
-                    ->line('From: ' . $this->data['From'])
-                    ->line('To: ' . $this->data['To'])
-                    ->line('Date: ' . $this->data['Date'])
-                    ->line('Time: ' . $this->data['Time'])
-                    ->line('Flight Number: ' . $this->data['flightNumber'])
-                    ->line('Do they require meet and greet: ' . $this->data['meetAndGreet'])
-                    ->line('Do they require airport carpark: ' . $this->data['airportCarpark'])
-                    ->line('Thank you for using our application!');
+            ->subject('New Booking Enquiry')
+            ->greeting('New Booking Enquiry')
+            ->line('Here are your booking details:')
+            ->line('Name: ' . $this->data['name'])
+            ->line('Contact Number: ' . $this->data['phone'])
+            ->line('Email: ' . $this->data['email'])
+            ->line('From: ' . $this->data['From'])
+            ->line('To: ' . $this->data['To'])
+            ->line('Date: ' . $this->data['Date'])
+            ->line('Time: ' . $this->data['Time'])
+            ->line('Flight Number: ' . $this->data['flightNumber'])
+            ->line('Do they require meet and greet: ' . $this->data['meetAndGreet'])
+            ->line('Do they require airport carpark: ' . $this->data['airportCarpark'])
+            ->line('Thank you for using our application!');
     }
 
     /**
