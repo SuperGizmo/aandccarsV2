@@ -22,7 +22,7 @@ class mailController extends Controller
         ]);
 
         //If everything is correct than run passes.
-        foreach (['bookings@aandccars.co.uk', 'daniel@rawrsome.co.uk'] as $recipient) {
+        foreach (['aandccars@outlook.com', 'daniel@rawrsome.co.uk'] as $recipient) {
             Mail::to($recipient)->send(new BookingReceived($data));
         }
 //        Notification::route('mail', 'bookings@aandccars.co.uk')->notify(new BookingReceived($data));
