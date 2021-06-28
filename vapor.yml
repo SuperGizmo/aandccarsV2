@@ -6,6 +6,19 @@ environments:
         memory: 1024
         cli-memory: 512
         runtime: 'php-8.0:al2'
+        bot-control:
+          - CategoryAdvertising
+          - CategoryArchiver
+          - SignalNonBrowserUserAgent
+          - CategoryHttpLibrary
+          - CategoryLinkChecker
+          - CategoryMiscellaneous
+          - CategoryMonitoring
+          - CategoryScrapingFramework
+          - CategorySecurity
+          - CategorySocialMedia
+          - SignalAutomatedBrowser
+          - SignalKnownBotDataCenter
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
